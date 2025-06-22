@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Prediction: {{ prediction }}</h2>
+    <img src="{{ url_for('uploaded_file', filename=image_file) }}" alt="Uploaded Image" width="300"><br><br>
+    <a href="{{ url_for('index') }}">
+        <input type="submit" value="Upload Another Image">
+    </a>
+</body>
+</html>
